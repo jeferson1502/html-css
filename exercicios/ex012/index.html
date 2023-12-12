@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos em HTML</title>
+</head>
+<body>
+
+    <h1>Inserindo vídeos locais</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+
+   <video controls poster="imagens/thumb.jpg" width="560" loop>
+        <source src="midia/Video-convertido.mkv" type="video/mkv">
+        <source src="midia/Video-convertido.mp4" type="video/mp4">
+        <source src="midia/video-convertido.webm" type="video/webm">
+        <source src="midia/Video-convertido.ogv" type="video/ogv">
+        <p>Seu navegador não é compatível com nenhum formato de vídeo disponível</p>
+   </video>
+ 
+   <h1>Inserindo vídeos do Youtube</h1>
+ 
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/0nOtisVPlgw?si=Y4PLz9tzWZiwQV34" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ 
+   <h1>Inserindo vídeos do vimeo</h1>
+     <iframe src="https://player.vimeo.com/video/400674996?h=d95c943bb9&color=ffffff" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        
+    
+</body>
+</html>

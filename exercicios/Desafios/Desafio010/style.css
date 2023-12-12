@@ -1,0 +1,244 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Bebas';
+    src: url(arquivos/fontes/BebasNeue-Regular.ttf) format(truetype);
+}
+@font-face {
+    font-family: 'android';
+    src: url(arquivos/fontes/idroid.otf) format(opentype);
+}
+@font-face {
+    font-family: 'prompt';
+    src: url(arquivos/fontes/prompt/Prompt-BlackItalic.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'prompt2';
+    src: url(arquivos/fontes/prompt/Prompt-SemiBold.ttf) format(truetype);
+}
+
+*{
+    margin: 0px;
+}
+
+body{
+    margin: 0px;
+    background-color: #84E1AD;
+}
+
+header{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to top, #1A5C38, #3CD781 );
+    height: 160px;
+    color: white;
+    padding-top: 5px;
+    padding-right: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.699);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.445);
+}
+
+header > h1{
+    font-family: 'Bebas';
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+
+header > p{
+    max-width: 400px;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 8px;
+}
+
+#desc{
+    text-align: center;
+}
+
+header > nav{
+        text-align: left;
+        text-shadow: none;
+}
+
+nav > a{
+    color: white;
+    text-decoration: none;
+    padding: 7px;
+    font-weight: bold;
+    transition-duration: .25s;
+    border-radius: 5px;
+}
+
+nav > a:hover{
+    color: rgb(255, 255, 255);
+    background-color: #083a1e;
+    height: 2px;
+}
+
+header > nav.pages{
+    text-align: center;
+}
+
+main{
+    min-width: 440px;
+    max-width: 800px;
+    background-color: white;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.541);
+}
+
+main img.pequeno{
+    max-width: 300px;
+    display: block;
+    margin: auto;
+}
+
+/*
+main{
+    margin: 10%;
+    min-width: 440px;
+    max-width: 1200px;
+    background-color: white;
+    padding-top: 1px;
+    margin-top: 0.5px;
+    box-shadow: 4px 1px 4px rgba(0, 0, 0, 0.527);
+    align-items: center;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+*/
+
+main img{
+    width: 100%;
+}
+
+section > h1, h2{
+    font-family: 'android', sans-serif;
+    color: #367051;
+    text-indent: 8px;
+}
+
+section > h2{
+    background-image: linear-gradient(to right, #C5EBD6, transparent);
+    margin-left: 5%;
+}
+
+article{
+    text-align: justify;
+    text-indent: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font: 1.2em;
+    padding: 15px;
+    margin: 6px;
+    letter-spacing: 0px;
+    line-height: 1.5em;
+}
+
+.paragrafo, ul{
+    list-style-type: '\1F5F8';
+    text-align: justify;
+    text-indent: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font: 2.2em;
+    padding: 15px;
+    margin: 6px;
+    font-weight: bold;
+    columns: 2;
+}
+
+.outro{
+    color: #187e44; 
+    text-decoration: none;
+}
+
+strong{
+    color: #187e44
+}
+
+#rodape{
+    color: white;
+}
+
+main a{
+    color: #104b2a;
+    text-decoration: none;
+    background-color: #0ba34d75; 
+}
+
+main a::after{
+    content: '⇗';
+}
+
+main a:hover{
+    color: #083a1e;
+    text-decoration: underline;
+    background-color: #059242; 
+}
+
+.externo:active{
+    color: #179c50;
+}
+
+div.video{
+    background-color: #1A5C38;
+    padding: 20px;
+    padding-bottom: 50%;
+    margin: 0px -20px 30px -20px;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    height: 90%;
+    width: 90%;
+}
+
+#final{
+    background-color: #C5EBD6;
+    margin: 2%;
+    border-radius: 15px;
+}
+
+#final > h3{
+    background-color: #2FA866;
+    color: white;
+    padding: 5px;
+    margin: 0px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/*.paragrafo, article > a{
+    color: #3F7B59;
+    text-decoration: none;
+    font-weight: bold;
+}
+*/
+
+/*
+.paragrafo{
+    text-align: justify;
+    text-indent: 15px;  
+    padding: 10px;
+    font-family: 'prompt', sans-serif;
+
+}
+*/
+
+/*ul{
+    font-family: sans-serif;
+}
+*/
+
+footer{
+    background-color: #1A5C38;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    font-size: 1.1em;
+}

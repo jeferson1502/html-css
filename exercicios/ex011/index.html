@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mídias</title>
+</head>
+<body>
+        <h1>Imagens dinâmicas</h1>
+        <p>Tente abrir esse site em vários dispositivos, ou apenas mude o tamanho da janela</p>
+
+        <picture>
+            <source media="(max-width: 650px)" srcset="imagens/foto-pequena.png" type="image/png">
+            <source media="(max-width: 850px)" srcset="imagens/foto-média.png" type="image/png">
+            <img src="imagens/foto-grande.png" alt="">
+
+            
+        </picture>
+
+        <h1>Áudio</h1>
+        <p>Agora vamos aprender a tocar músicas</p>
+        <audio preload = "none" controls>
+            <source src="midia/satoru-gojo.mp3" type="audio/mpeg">
+        </audio>
+</body>
+</html>
