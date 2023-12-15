@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'titulo';
+    src: url(fontes/PassionOne-Black.ttf) format(truetype), url(fontes/PassionOne-Bold.ttf) format(truetype), url(fontes/PassionOne-Regular.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'paragrafo';
+    src: url(fontes/Sriracha-Regular.ttf) format(truetype);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    margin: 0px;
+}
+
+header{
+    padding-top: 5px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 3em;
+}
+
+header h1{
+    margin-bottom: 0px;
+    font-family: 'titulo', sans-serif;
+    font-variant: small-caps;
+}
+
+header p{
+    margin-top: 0px;
+    padding: 30px;
+    font-size: 0.5em;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+main p{
+    line-height: 2em;
+    padding: 15px;
+    font-size: 3em;
+    margin: 100px 0px 100px 25px;
+    background-color: white;
+    font-family: 'paragrafo', serif;
+}
+
+article{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+#flor{
+    background: white url('imagens/background001.jpg') center center fixed;
+    background-size: cover;
+    width: 98.5vw;
+}
+
+#flor > p {
+    background-color: rgba(14, 14, 14, 0.699);
+    color: white;
+    display: inline-block;
+}
+
+#papel{
+    background: white url('imagens/background002.jpg') center center fixed;
+    background-size: cover;
+    width: 98.5vw;
+}
+
+#papel > p {
+    background-color: rgba(14, 14, 14, 0.699);
+    color: white;
+    display: inline-block;
+}
+
+footer{
+    background-color: black;
+    padding: 1px 0px 3px 0px;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer a{
+    color: white;
+    font-weight: bold;
+}
