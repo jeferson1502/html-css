@@ -24,7 +24,7 @@ header{
     background-color: black;
     color: white;
     text-align: center;
-    font-size: 3em;
+    font-size: 5vw;
 }
 
 header h1{
@@ -53,7 +53,7 @@ a:hover{
 main p{
     line-height: 2em;
     padding: 15px;
-    font-size: 3em;
+    font-size:4.5vw;
     margin: 100px 0px 100px 25px;
     background-color: white;
     font-family: 'paragrafo', serif;
@@ -62,6 +62,10 @@ main p{
 article{
     padding-top: 10vh;
     padding-bottom: 10vh;
+}
+
+.img{
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.425);
 }
 
 #flor{
@@ -74,6 +78,7 @@ article{
     background-color: rgba(14, 14, 14, 0.699);
     color: white;
     display: inline-block;
+    text-shadow: 2px 2px 0px black;
 }
 
 #papel{
@@ -86,6 +91,7 @@ article{
     background-color: rgba(14, 14, 14, 0.699);
     color: white;
     display: inline-block;
+    text-shadow: 2px 2px 0px black;
 }
 
 footer{
