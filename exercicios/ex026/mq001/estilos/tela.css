@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: rgba(24, 34, 34, 0.664);
+}
+
+h1{
+    text-align: center;
+    padding: 20px;
+}
+
+p{
+    width: 400px;
+    display: block;
+    margin: auto;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    display: inline-block;
+}
