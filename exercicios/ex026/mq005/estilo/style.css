@@ -19,6 +19,19 @@ header h1{
     padding: 10px;
 }
 
+#menu{
+    display: block;
+    background-color: black;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+#menu:hover{
+    background-color: darkgray;
+    color: black;
+}
+
 header ul{
     list-style-type: none;
     text-align: center;
@@ -35,6 +48,10 @@ header a{
 
 header a:hover{
     background-color: rgb(110, 109, 109);
+}
+
+menu{
+    display: none;
 }
 
 main{
