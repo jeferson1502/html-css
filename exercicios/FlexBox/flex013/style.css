@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgba(252, 74, 26, .85)
+}
+
+html{
+    direction: ltr;
+}
+
+.container > *{
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 3px;
+    border: 1px solid white;
+    color: white;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: all 150ms ease;
+}
+
+.container > *:hover{
+    background-color: rgba(255, 255, 255, 0.507);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+main{
+    flex: 5 1 0;
+    padding: 8px 15px;
+    border-radius: 15px;
+}
+
+aside{
+    padding: 8px 35px;
+    flex-grow: 1;
+    border-radius: 15px;
+}
+
+.outro, .ads{
+    width: 100px;
+}
+
+div :nth-child(2){
+    order: -1;
+}
+
+
+
+

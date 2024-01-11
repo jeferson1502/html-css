@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgba(252, 74, 26, .85)
+}
+
+html{
+    direction: ltr;
+}
+
+.container > *{
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 3px;
+    border: 1px solid white;
+    color: white;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: all 150ms ease;
+}
+
+.container > *:hover{
+    background-color: rgba(255, 255, 255, 0.507);
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    height: 300px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box2{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+}
+
+

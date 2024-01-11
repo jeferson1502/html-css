@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgba(252, 74, 26, .85)
+}
+
+html{
+    direction: ltr;
+}
+
+.container > *{
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 3px;
+    border: 1px solid white;
+    color: white;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: all 150ms ease;
+}
+
+.container > *:hover{
+    background-color: rgba(255, 255, 255, 0.507);
+}
+
+.container{
+    border: 3px solid white;
+    display: flex;
+    width: 400px;
+}
+
+.container div{
+    margin: 0px;
+    padding: 0px;
+    width: 150px;
+    flex-shrink: 1;
+}
+
+.container :nth-child(2){
+    flex-shrink: 4;
+}
+
+.container :nth-child(3){
+    flex-shrink: 2;
+}
+
