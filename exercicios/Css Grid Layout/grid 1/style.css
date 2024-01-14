@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+div{
+    justify-content: center;
+}
+
+.container{
+    display: grid;
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.container{
+    grid-template-columns: 100px auto 50px;
+    grid-template-rows: 50px 200px 50px;
+}
+
+.item{
+    background-color: tomato;
+    margin: 5px;
+    text-align: center;
+}

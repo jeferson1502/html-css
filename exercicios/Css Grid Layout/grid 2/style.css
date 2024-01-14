@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+div{
+    justify-content: center;
+}
+
+.container{
+    display: grid;
+    width: 400px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.container{
+    grid-template-areas: 
+    "logo nav nav"
+    "side main advert"
+    "side footer footer"
+    ;
+}
+
+.header{ 
+    grid-area: logo;
+}
+
+.nav{
+    grid-area: nav;
+}
+
+.side{
+    grid-area: side;
+}
+
+.advert{
+    grid-area: advert;
+}
+
+.main{
+    grid-area: main;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+.item{
+    background-color: tomato;
+    margin: 5px;
+    text-align: center;
+}
