@@ -47,4 +47,5 @@ div{
     background-color: tomato;
     margin: 5px;
     text-align: center;
+    max-width: 400px;
 }

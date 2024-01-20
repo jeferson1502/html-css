@@ -7,43 +7,11 @@
 
 .container{
     display: grid;
-    grid-template-areas: 
-    "header header header"
-    "sidenav main ads"
-    "footer footer footer";
+    grid-template-columns: 1fr 2fr 1fr;
 }
 
-header{ 
-    background-image: linear-gradient(to right, rgb(82, 8, 82), rgb(175, 22, 175));
-    grid-area: header;
-}
-
-.sidenav{
-    grid-area: sidenav;
-}
-
-.main{
-    grid-area: main;
-}
-
-.ad{
-    grid-area: ads;
-}
-
-footer{
-    grid-area: footer;
-}
-
-ul.links{
-    list-style-type: none;
-    text-align: right;
-}
-
-a{
-    text-decoration: none;
-    color: white;
-}
+ul
 
 img{
-    max-width: 200px;
+ width: 200px
 }
