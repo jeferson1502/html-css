@@ -6,7 +6,9 @@
 }
 
 img{
-    width: 200px;
+    width: 100%;
+    display: block;
+    border-radius: 5px;
 }
 
 li{
@@ -26,6 +28,8 @@ a{
     "footer footer footer";
 }
 
+/* HEADER */
+
 .header{
     display: grid;
     grid-area: header;
@@ -35,18 +39,146 @@ a{
     align-items: center;
 }
 
-.sidenav{
-    grid-area: sidenav;
+.header img{
+    min-width: 200px;
+    max-width: 280px;
 }
 
-.main{
-    grid-area: main;
+header ul{
+    display: flex;
+    flex-wrap: wrap;
 }
+
+header li{
+    padding: 0;
+}
+
+header a{
+    padding: 15px;
+    background-color: rgba(0, 0, 0, .1);
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    
+    
+}
+
+header a:hover{
+    background: rgba(0, 0, 0, .5);
+    
+    transition: .25s ease;
+}
+
+header li + li{
+    margin-left: 30px;
+}
+
+/* SIDE NAV */
+
+.sidenav{
+    grid-area: sidenav;
+    background-color: #a5a6a721;
+    padding: 30px;
+}
+
+.sidenav li a{
+    display: block;
+    min-width: 60px;
+    max-width: 100px;
+    margin: 0 auto 30px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, .35);
+
+}
+
+.sidenav li a:hover{
+    background-color: #b07dfb;
+    transition: .25s ease-out;
+}
+
+/* CONTENT */
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-area: main;
+    padding: 30px;
+    max-width: 900px;
+    grid-gap: 30px;
+    margin: 0 auto;
+}
+
+.col-wide{
+    grid-column: 1 / -1;
+}
+
+#img1{
+    grid-row: span 2;
+    align-self: end;
+}
+
+#img2{
+    align-self: end;
+}
+
+main p{
+    color: rgba(0, 0, 0, .8);
+}
+
+/* TíTulo */
+
+.titulo{
+    color: #b07dfb;
+}
+
+.titulo h1{
+    font-size: 3.75em;
+    line-height: 1;
+    font-weight: bold;
+}
+
+.titulo p{
+    font-size: 0.875em;
+    font-style: italic;
+}
+
+
+
+
+.info{
+    display: grid; 
+    justify-items: center;
+}
+
+
+
+
+
+
+
+
+/* ANÚNCIOS */
 
 .ad{
     grid-area: ad;
+    display: grid;
+    align-content: start;
+    grid-gap: 30px;
+    padding: 30px;
 }
+
+/* FOOTER */
 
 .footer{
     grid-area: footer;
+    background-image: linear-gradient(135deg, #8844ee, #b07dfb);
+}
+
+.footer p{
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 30px;
 }
